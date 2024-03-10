@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Navigation Bar</title>
+<style>
+    /* Style the navigation bar */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px
+ 
+16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+
+    
+.navbar
+ 
+a:hover {
+        background-color: #111;
+    }
+
+    /* Style the navigation bar logo */
+    .navbar img {
+        height: 30px;
+        padding: 15px;
+    }
+
+    /* Style the active/current link */
+    .active {
+        background-color: #04AA6D;
+    }
+
+    /* Hide the navigation bar on small screens */
+    @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {display: none;}
+        .navbar a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .navbar a.icon .fa:hover {
+            color: black;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Chrome_icon.svg" alt="Google Chrome icon">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+</div>
+</body>
+</html>
